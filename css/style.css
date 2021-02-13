@@ -1,7 +1,96 @@
-header {
-
+/* Constants */
+:root {
+    --color1: #262C70;
+    --color2: #ED497C;
+    --color3: #BFDDFF;
+    --color4: #1572B6;
+    --color5: #EBEBEB;
+    --color6: #33A9DC;
+    --color7: #E2F2FF;
+    --color8: #0B66C3;
 }
 
-footer {
-    
+/* Color Class */
+.color1 {
+    color: var(--color1);
+}
+.color2 {
+    color: var(--color2);
+}
+.color3 {
+    color: var(--color3);
+}
+.color4 {
+    color: var(--color4);
+}
+.color5 {
+    color: var(--color5);
+}
+.color6 {
+    color: var(--color6);
+}
+.color7 {
+    color: var(--color7);
+}
+.color8 {
+    color: var(--color8);
+}
+
+/* Default Elements */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0em;
+}
+
+header {
+    width: 100%;
+}
+
+/* Customize Elements */
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.header-title {
+    color: var(--color4);
+    padding: .5em 1em;
+    font-size: 2rem;
+}
+
+.header-tabs {
+    height: 3rem;
+    color: var(--color5);
+    background-color: var(--color1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.a-routes {
+    background-color: var(--color1);
+    color: white;
+    border: none;
+    margin: 0em 2em;
+    padding: 0em;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.img-home-page {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 50rem;
+    opacity: 0.2;
+    background-color: var(--color3);
+}
+
+.banner-home-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
