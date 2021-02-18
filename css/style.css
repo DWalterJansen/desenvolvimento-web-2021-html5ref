@@ -59,12 +59,8 @@
 }
 
 /* Default Elements */
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
-}
 body {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
     margin: 0em;
 }
 header {
@@ -198,11 +194,8 @@ h3 {
     border-radius: 50%;
     width: 183px;
 }
-.content .row h3 {
-    padding: 5px 0;
-}
 .content .row p {
-    padding: 10px 0 0 0;
+    padding: 0;
     font-size: 1em;
 }
 .content .icons {
@@ -241,11 +234,4 @@ footer hr {
     cursor: pointer;
     text-decoration: none;
     font-size: 1rem;
-}
-
-/* RESPONSIVIDADE */
-@media screen and (max-width: 700px) {
-	div .col-3 {
-        width: 100%;
-    }
 }
