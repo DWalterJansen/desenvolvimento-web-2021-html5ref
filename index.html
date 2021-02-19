@@ -37,8 +37,8 @@
                         <p>Conheça algumas tags do HTML5</p>
                         <button><a href="referencias.html">Ver Referências</a></button>
                     </div>
-                    <div class="cols">
-                        <img class="img-home-page" src="images/home-page-image.png" alt="">
+                    <div class="cols img-home-page">
+                        <img id="img-home-page" src="images/home-page-image.png" alt="">
                     </div>
                 </div>
             </section>
@@ -48,24 +48,20 @@
     <!-- ANCHOR Ferramentas -->
     <section id="tools">
         <div class="container">
+            <!-- NOTE Seção de ferramentas utilizadas - imagens -->
             <div class="row">
                 <div class="cols">
                     <div>
-                        <img src="icons/Figma-group.png" width="150px" alt="Figma">
+                        <img src="icons/Figma-group.png" width="150px" height="150px" alt="Figma">
                         <div class="text-tools">
                             <p id="tools-title">Figma</p>
-                            <p>Editor utilizado na prototipagem do website.</p>
+                            <p>Editor utilizado na elaboração dos Wireframes e dos protótipos do website.</p>
                         </div>
                     </div>
                 </div>
                 <div class="cols">
-                    <!-- <div class="circle circle-externo">
-                        <div class="circle circle-interno">
-                            <img src="icons/Html.png" width="80px" alt="HTML">
-                        </div>
-                    </div>            -->
                     <div>
-                        <img src="icons/Html-group.png" width="150px" alt="Html">
+                        <img src="icons/Html-group.png" width="150px" height="150px" alt="Html">
                         <div class="text-tools">
                             <p id="tools-title">HTML</p>
                             <p>Linguagem de marcação utilizada na construção de todas as páginas Web.</p>
@@ -74,14 +70,14 @@
                 </div>
                 <div class="cols">
                     <div>
-                        <img src="icons/Css-group.png" width="150px" alt="CSS">
+                        <img src="icons/Css-group.png" width="150px" height="150px" alt="CSS">
                         <div class="text-tools">
                             <p id="tools-title">CSS</p>
                             <p>Código utilizado para formatar os estilos dos componentes utilizados.</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>        
         </div>
     </section>
 
@@ -101,13 +97,15 @@
     </section>
 
     <!-- ANCHOR Footer -->
-    <footer>
+    <footer id="footer-home">
         <hr>
-        <span class="footer-copy">Copyright©2021</span>
-        <span class="routers-footer">
-            <a class="a-routes-footer">Referências</a> | 
-            <a class="a-routes-footer" href="sobrenos.html">Sobre Nós</a>
-        </span>
+        <nav class="footer-tabs">
+            <ul>
+                <li><a class="a-routes-footer" href="referencias.html">Referências</a></li>
+                <li><a class="a-routes-footer" href="sobrenos.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+        <span class="footer-copy">Copyright&copy;2021</span>
     </footer>
 </body>
 

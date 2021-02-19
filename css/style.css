@@ -65,6 +65,7 @@ button {
     border: none;
     border-radius: 5px;
     font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 button a {
@@ -168,7 +169,7 @@ h3 {
     background: var(--color2);
     color: white;
 }
-.img-home-page {
+#img-home-page {
     display: block;
     margin: auto; 
     width: 90%;
@@ -286,19 +287,40 @@ button {
     padding: 0 5px;
 }
 /* FOOTER */
+#footer-home {
+    padding-top: 0;
+}
 footer hr {
     margin-bottom: 20px;
+    padding: 0;
 }
 .footer-copy {
+    display: flex;
     font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
 }
-.routers-footer {
-    position: relative;
-    float: right;
+.footer-tabs {
+    height: 3rem;
     color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
 }
-.a-routes-footer {
+.footer-tabs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+.footer-tabs ul li {
+    float: left;
+}
+ul li .a-routes-footer {
     border: none;
+    color: var(--color1);
     padding: 0 1em;
     display: inline-block;
     cursor: pointer;
@@ -311,24 +333,37 @@ footer hr {
 @media (max-width: 575.98px) { 
     h1 {
         font-size: 3em;
-        padding: 10px 0;
+        padding: 20px 0 10px 0;
+        text-align: center;
     }
-    .banner {
-        align-self: center;
-    }
+    /* Banner Principal - HOMEPAGE */
     .banner .cols {
         width: 100%;
+        align-self: center;
+        padding: 0;       
+        margin: 0 auto;
     }
-    .banner p {
-        font-size: 1.2em;
-        padding: 10px 0;
-    }
-    .banner button {
-        margin-bottom: 10px;
-    }
-    .banner .cols .img-home-page {
+    div.cols.img-home-page {
         display: none;
-        width: 0%;
+    }
+    .banner-home-page p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .banner-home-page button {
+        display: flex;
+        margin: 10px auto;
+        font-size: 1em;
+    }
+    /* Section Conheça o time */
+    #meet-team h2 {
+        font-size: 3em;
+    }
+    #meet-team p {
+        font-size: 1.5em;
+    }
+    #meet-team button {
+        font-size: 1em;
     }
 }
 

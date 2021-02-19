@@ -17,16 +17,33 @@
 </head>
 
 <body>
-    <!-- ANCHOR Header -->
-    <header>
+   <!-- ANCHOR Header -->
+   <header>
+    <div class="container">
         <div class="header-title">
             Guia <span>HTML 5</span>
         </div>
-        <div class="header-tabs">
-            <a class="a-routes" href="index.html">Home</a>
-            <a class="a-routes">Referências</a>
-        </div>
-    </header>
+        <nav class="header-tabs">
+            <ul>
+                <li><a class="a-routes" href="referencias.html">Referências</a></li>
+                <li><a class="a-routes" href="sobrenos.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+
+        <section class="banner">
+            <div class="row">
+                <div class="cols banner-home-page" >
+                    <h1>HOMEPAGE</h1>
+                    <p>Conheça algumas tags do HTML5</p>
+                    <button><a href="referencias.html">Ver Referências</a></button>
+                </div>
+                <div class="cols img-home-page">
+                    <img id="img-home-page" src="images/home-page-image.png" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+</header>
     <div class="content">
         <h1>Sobre nós</h1>
         <p>Conheça a equipe de desenvolvedores deste guia</p>
@@ -61,13 +78,15 @@
         </div>
     </div>
     <!-- ANCHOR Footer -->
-    <footer>
+    <footer id="footer-home">
         <hr>
-        <span class="footer-copy">Copyright©2021</span>
-        <span class="routers-footer">
-            <a class="a-routes-footer" href="index.html">Home</a> | 
-            <a class="a-routes-footer">Referências</a>
-        </span>
+        <nav class="footer-tabs">
+            <ul>
+                <li><a class="a-routes-footer" href="referencias.html">Referências</a></li>
+                <li><a class="a-routes-footer" href="sobrenos.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+        <span class="footer-copy">Copyright&copy;2021</span>
     </footer>
 </body>
 
