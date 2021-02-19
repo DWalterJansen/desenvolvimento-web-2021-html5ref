@@ -1,4 +1,4 @@
-/* Constants */
+/* ANCHOR Definindo as constantes */
 :root {
     --color1: #262C70;
     --color2: #ED497C;
@@ -10,33 +10,7 @@
     --color8: #0B66C3;
 }
 
-/* Color Class */
-.color1 {
-    color: var(--color1);
-}
-.color2 {
-    color: var(--color2);
-}
-.color3 {
-    color: var(--color3);
-}
-.color4 {
-    color: var(--color4);
-}
-.color5 {
-    color: var(--color5);
-}
-.color6 {
-    color: var(--color6);
-}
-.color7 {
-    color: var(--color7);
-}
-.color8 {
-    color: var(--color8);
-}
-
-/* Fonts Class */
+/* ANCHOR Importando as Fontes que serão utilizadas */
 @font-face {
     font-family: 'Roboto-Light';
     src: url(../fonts/Roboto-Light.ttf);
@@ -58,47 +32,62 @@
     src: url(../fonts/Roboto-Black.ttf);
 }
 
-/* Default Elements */
+/* ANCHOR Default Elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
 body {
     font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
-    margin: 0em;
+    font-size: 12px;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
 }
 header {
     width: 100%;
-}
-button {
-    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
-    padding: 15px 40px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
 }
 footer {
     padding: 2em 0em;
     margin: 0 1em 0 2em;
 }
+
+/* Button */
+button {
+    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Grid */
 .row {
     display: flex;
     width: 100%;
 }
-.col-2 {
-    width: 50%;
-}
-.col-3 {
-    width: 33%;
-}
 
-/* Typography */
+/* ANCHOR Typography */
 h1 {
     color: var(--color1);
     font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 5em;
 }
 h2 {
     color: var(--color1);
     font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 h3 {
     color: var(--color1);
@@ -106,20 +95,19 @@ h3 {
     font-size: 1.5rem;
 }
 
-/* HEADER */
+/* ANCHOR Header */
 .header-title {
     color: var(--color8);
     padding: .5em 1em;
     font-size: 2rem;
     font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
 }
-
 .header-title span {
     color: var(--color8);
     font-size: 2rem;
     font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
 }
-
+/* Header: Barra de Navegação */
 .header-tabs {
     height: 3rem;
     color: var(--color5);
@@ -129,37 +117,51 @@ h3 {
     align-items: center;
     font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
 }
-
+.header-tabs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-tabs ul li {
+    float: left;
+}
 .a-routes {
-    background-color: var(--color1);
     color: white;
     border: none;
     margin: 0em 2em;
-    padding: 0em;
+    padding: 15px 0;
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
     font-size: 1rem;
 }
-
+.a-routes:hover {
+    color: white;
+    padding: 14px 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgba(11, 102, 195, 0.5);
+    border-bottom: 3px solid var(--color6);
+}
+/* Header: Banner */
 .banner {
     position: relative;
     width: 100%;
     background-image: linear-gradient( #BFDDFF, #E2F2FF);
 }
-
+.banner .cols {
+    width: 50%;
+}
 .banner-home-page {
     position: relative;
-    padding-top: 10%;
+    align-self: center;
     padding-left: 15%;
-    /* top: 50%; */
-    /* left: 10%; */
-    /* transform: translate(-50%, -50%); */
 }
 .banner-home-page p {
     font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
-    padding-top: 20px;
-    font-size: 1.5rem;
+    text-align: start;
+    font-size: 2em;
+    padding: 20px 0;
 }
 .banner-home-page button {
     margin-top: 20px;
@@ -167,16 +169,84 @@ h3 {
     color: white;
 }
 .img-home-page {
-    /* display: block; */
+    display: block;
     margin: auto; 
     width: 90%;
     /* max-width: 50rem;
     opacity: 0.5; */
 }
-/* CONTENT */
-.content {
-    margin: 0 1em;
+/* ANCHOR Sections */
+/* Ferramentas */
+#tools .cols {
+    margin: 25px 10px 0 10px;
+    width: 33%;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    text-align: center;
+}
+/* .circle {
+    display: block;
+    border-radius: 50%;
+    margin: 10px;
+}
+.circle-externo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #F1EFEF;
+}
+.circle-interno {
+    position: absolute;
     vertical-align: middle;
+    width: 130px;
+    height: 130px;
+    background-color: #E5E5E5;
+}
+.circle-interno img {
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto
+}  */
+.text-tools {
+    margin: 10px 0;
+    padding: 0 15px;
+}
+.text-tools p {
+    font-size: 1.7em;
+    padding-top: 5px;
+}
+.text-tools #tools-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 5px;
+}
+/* Conheça o time */
+#meet-team {
+    background-color: var(--color3);
+    margin: 20px 0 0 0;
+}
+#meet-team .row .cols {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 60px 0;
+}
+#meet-team h2 {
+    padding: 10px 0;
+}
+#meet-team p {
+    font-size: 2em;
+    padding: 10px 0;
+}
+button {
+    margin-top: 20px;
+    background: var(--color8);
+    color: white;
 }
 .content h1, h3, p, .icons {
     text-align: center;
@@ -234,4 +304,53 @@ footer hr {
     cursor: pointer;
     text-decoration: none;
     font-size: 1rem;
+}
+
+/* ANCHOR media queries */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    h1 {
+        font-size: 3em;
+        padding: 10px 0;
+    }
+    .banner {
+        align-self: center;
+    }
+    .banner .cols {
+        width: 100%;
+    }
+    .banner p {
+        font-size: 1.2em;
+        padding: 10px 0;
+    }
+    .banner button {
+        margin-bottom: 10px;
+    }
+    .banner .cols .img-home-page {
+        display: none;
+        width: 0%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    h1 {
+        font-size: 4em;
+        padding: 10px 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }

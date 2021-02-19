@@ -19,34 +19,86 @@
 <body>
     <!-- ANCHOR Header -->
     <header>
-        <div class="header-title">
-            Guia <span>HTML 5</span>
-        </div>
-        <div class="header-tabs">
-            <a class="a-routes">Referências</a>
-            <a class="a-routes" href="sobrenos.html">Sobre Nós</a>
-        </div>
-
-        <div class="banner">
-            <div class="row">
-                <div class="col-2 banner-home-page" >
-                    <h1>HOMEPAGE</h1>
-                    <p>Conheça algumas tags do HTML5</p>
-                    <button>Ver Referências</button>
+        <div class="container">
+            <div class="header-title">
+                Guia <span>HTML 5</span>
+            </div>
+            <nav class="header-tabs">
+                <ul>
+                    <li><a class="a-routes" href="referencias.html">Referências</a></li>
+                    <li><a class="a-routes" href="sobrenos.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+    
+            <section class="banner">
+                <div class="row">
+                    <div class="cols banner-home-page" >
+                        <h1>HOMEPAGE</h1>
+                        <p>Conheça algumas tags do HTML5</p>
+                        <button><a href="referencias.html">Ver Referências</a></button>
+                    </div>
+                    <div class="cols">
+                        <img class="img-home-page" src="images/home-page-image.png" alt="">
+                    </div>
                 </div>
-                <div class="col-2">
-                    <img class="img-home-page" src="images/home-page-image.png" alt="">
+            </section>
+        </div>
+    </header>
+
+    <!-- ANCHOR Ferramentas -->
+    <section id="tools">
+        <div class="container">
+            <div class="row">
+                <div class="cols">
+                    <div>
+                        <img src="icons/Figma-group.png" width="150px" alt="Figma">
+                        <div class="text-tools">
+                            <p id="tools-title">Figma</p>
+                            <p>Editor utilizado na prototipagem do website.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cols">
+                    <!-- <div class="circle circle-externo">
+                        <div class="circle circle-interno">
+                            <img src="icons/Html.png" width="80px" alt="HTML">
+                        </div>
+                    </div>            -->
+                    <div>
+                        <img src="icons/Html-group.png" width="150px" alt="Html">
+                        <div class="text-tools">
+                            <p id="tools-title">HTML</p>
+                            <p>Linguagem de marcação utilizada na construção de todas as páginas Web.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div>
+                        <img src="icons/Css-group.png" width="150px" alt="CSS">
+                        <div class="text-tools">
+                            <p id="tools-title">CSS</p>
+                            <p>Código utilizado para formatar os estilos dos componentes utilizados.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <div id="content">
-        <div class="row">
-            <div class="col-3">A</div>
-            <div class="col-3">B</div>
-            <div class="col-3">C</div>
+    </section>
+
+    <!-- ANCHOR Conheça o time -->
+    <section id="meet-team">
+        <div class="container">
+            <div class="row">
+                <div class="cols">
+                    <div>
+                        <h2>Nosso time</h2>
+                        <p>Conheça a equipe de desenvolvimento</p>
+                        <button><a href="sobrenos.html">Conheça</a></button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- ANCHOR Footer -->
     <footer>
