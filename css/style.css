@@ -1,4 +1,22 @@
-/* ANCHOR Definindo as constantes */
+/********************************************************************************
+*                           ORGANIZAÇÃO DO ARQUIVO CSS                          *
+*********************************************************************************
+* 1 - Declaração das variáveis utilizadas
+* 2 - Importação das fontes que serão utilizadas
+* 3 - Formatação padrão dos componentes (Ex.: h1, button, body, etc)
+* 4 - Header
+* 5 - Tools
+* 6 - Meet-Team
+* 7 - Team
+* 8 - References
+* 9 - Tag
+* 10 - Footer
+* 11 - Responsividade
+*/
+
+/*
+    ANCHOR 1 - Declaração das variáveis utilizadas                       
+*/
 :root {
     --color1: #262C70;
     --color2: #ED497C;
@@ -8,9 +26,12 @@
     --color6: #33A9DC;
     --color7: #E2F2FF;
     --color8: #0B66C3;
+    --color9: #FFFFFF;
+    --color10: #000000;
 }
-
-/* ANCHOR Importando as Fontes que serão utilizadas */
+/*
+    ANCHOR 2 - Importação das fontes que serão utilizadas                       
+*/
 @font-face {
     font-family: 'Roboto-Light';
     src: url(../fonts/Roboto-Light.ttf);
@@ -31,88 +52,91 @@
     font-family: 'Roboto-Black';
     src: url(../fonts/Roboto-Black.ttf);
 }
-
-/* ANCHOR Default Elements */
+/*
+    ANCHOR 3 - Formatação padrão dos componentes (Ex.: h1, button, body, etc)                      
+*/
 * {
     margin: 0;
     padding: 0;
 }
-html, body {
-    height: 100%;
-    overflow-x: hidden;
-}
 body {
     font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    margin: 0;
+    font-size: 14px;
 }
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
-header {
-    width: 100%;
-}
-footer {
-    padding: 2em 0em;
-    margin: 0 1em 0 2em;
-}
-
 /* Button */
 button {
-    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
-    padding: 15px 40px;
+    font-size: 1.2em;
+    padding: 10px 40px;
     border: none;
     border-radius: 5px;
-    font-size: 1.5em;
     text-transform: uppercase;
 }
-
-button a {
-    text-decoration: none;
-    color: white;
-}
-
-/* Grid */
-.row {
-    display: flex;
-    width: 100%;
-}
-
-/* ANCHOR Typography */
+/* Typography */
 h1 {
     color: var(--color1);
     font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
-    font-size: 5em;
+    font-size: 4em;
 }
 h2 {
     color: var(--color1);
     font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 3em;
 }
 h3 {
     color: var(--color1);
     font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
 }
-
-/* ANCHOR Header */
+/* Links */
+a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 20px 5px;
+}
+a:hover, 
+a:active, 
+a:visited {
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px 5px;
+}
+/* Classes padrões utilizadas */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.row {
+    /* display: flex; */
+    width: 100%;
+}
+/*
+    ANCHOR 4 - Header                     
+*/
+/* Logo */
 .header-title {
     color: var(--color8);
-    padding: .5em 1em;
+    padding: .2em 1em;
     font-size: 2rem;
     font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+}
+.header-title a:hover, 
+.header-title a:visited, 
+.header-title a:active {
+    color: var(--color8);
 }
 .header-title span {
     color: var(--color8);
     font-size: 2rem;
     font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
 }
-/* Header: Barra de Navegação */
+/* Barra de Navegação */
 .header-tabs {
     height: 3rem;
     color: var(--color5);
     background-color: var(--color1);
+    padding: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -129,30 +153,25 @@ h3 {
 .a-routes {
     color: white;
     border: none;
-    margin: 0em 2em;
-    padding: 15px 0;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1rem;
+    margin: 0em 1em;
+    font-size: 1.5em;
 }
 .a-routes:hover {
     color: white;
-    padding: 14px 10px;
-    display: inline-block;
-    cursor: pointer;
     background-color: rgba(11, 102, 195, 0.5);
     border-bottom: 3px solid var(--color6);
 }
-/* Header: Banner */
+/* Banner */
 .banner {
     position: relative;
     width: 100%;
     background-image: linear-gradient( #BFDDFF, #E2F2FF);
 }
-.banner .cols {
-    width: 50%;
+.banner .row {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
+/* Texto */
 .banner-home-page {
     position: relative;
     align-self: center;
@@ -169,68 +188,53 @@ h3 {
     background: var(--color2);
     color: white;
 }
+.banner-home-page button a:active, 
+.banner-home-page button a:hover,
+.banner-home-page button a:visited {
+    color: white;
+}
+/* Imagem */
 #img-home-page {
-    display: block;
+    display: flex;
     margin: auto; 
     width: 90%;
-    /* max-width: 50rem;
-    opacity: 0.5; */
 }
-/* ANCHOR Sections */
-/* Ferramentas */
-#tools .cols {
-    margin: 25px 10px 0 10px;
-    width: 33%;
+/*
+    ANCHOR 5 - Tools                      
+*/
+#tools {
+    margin: 25px 0 0 0;
+    width: 100%;
     display: flex;
     align-items: center;
-	justify-content: center;
     text-align: center;
 }
-/* .circle {
-    display: block;
-    border-radius: 50%;
-    margin: 10px;
+#tools .row {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
-.circle-externo {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    background-color: #F1EFEF;
-}
-.circle-interno {
-    position: absolute;
-    vertical-align: middle;
-    width: 130px;
-    height: 130px;
-    background-color: #E5E5E5;
-}
-.circle-interno img {
-    display: block;
-    margin-top: 15%;
-    margin-left: auto;
-    margin-right: auto
-}  */
 .text-tools {
-    margin: 10px 0;
+    margin: 10px auto;
     padding: 0 15px;
-}
-.text-tools p {
-    font-size: 1.7em;
-    padding-top: 5px;
 }
 .text-tools #tools-title {
     text-transform: uppercase;
-    font-weight: bold;
     font-size: 2em;
     padding-bottom: 5px;
+    font-family: 'Roboto-Medium', Arial, Helvetica, sans-serif;
 }
-/* Conheça o time */
+.text-tools p {
+    font-size: 1.5em;
+    padding-top: 5px;
+}
+/*
+    ANCHOR 6 - Meet-Team                     
+*/
 #meet-team {
     background-color: var(--color3);
     margin: 20px 0 0 0;
 }
-#meet-team .row .cols {
-    display: flex;
+#meet-team .row{
     align-items: center;
 	justify-content: center;
     text-align: center;
@@ -241,57 +245,80 @@ h3 {
     padding: 10px 0;
 }
 #meet-team p {
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 10px 0;
 }
-button {
+#meet-team button {
     margin-top: 20px;
     background: var(--color8);
     color: white;
 }
-.content h1, h3, p, .icons {
+#meet-team button a:hover,
+#meet-team button a:hover,
+#meet-team button a:visited  {
+    margin-top: 20px;
+    background: var(--color8);
+    color: white;
+}
+/*
+    ANCHOR 7 - Team                      
+*/
+#team {
+    margin-top: 10px;
+}
+#team .row {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+#team h1, h3, p, .icons {
     text-align: center;
     margin-bottom: 0;
 }
-.content p {
-    font-size: 1.5rem;
+#team p {
+    font-size: 2rem;
     padding: 30px 0;
-    margin-top: 0;
+    margin-bottom: 5px;
 }
-.content .row .img-integrante {
+#team .row .img-integrante {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5px auto 0 auto;
     border-radius: 50%;
     width: 183px;
 }
-.content .row p {
-    padding: 0;
-    font-size: 1em;
+#team .row p {
+    padding: 5px 0;
+    font-size: 1.3em;
 }
-.content .icons {
+#team .icons {
     font-size: 40px;
-    padding-top: 20px;
 }
-.content .icons a {
+#team .icons a {
     text-decoration: none;
     cursor: pointer;
     border: none;
 }
-.content .github-icon {
+#team .github-icon {
     color: black;
     padding: 0 5px
 }
-.content .linkedin-icon {
+#team .linkedin-icon {
     color: var(--color8);
     padding: 0 5px;
 }
-/* FOOTER */
+/*
+    ANCHOR 8 - References                      
+*/
+/*
+    ANCHOR 9 - Tag                      
+*/
+/*
+    ANCHOR 10 - Footer                      
+*/
 #footer-home {
     padding-top: 0;
 }
 footer hr {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 0;
 }
 .footer-copy {
@@ -300,7 +327,9 @@ footer hr {
     text-align: center;
     justify-content: center;
     padding-top: 5px;
+    margin-bottom: 10px;
 }
+/* Barra de Navegação */
 .footer-tabs {
     height: 3rem;
     color: var(--color1);
@@ -313,79 +342,18 @@ footer hr {
     margin: 0;
     padding: 0;
     list-style: none;
-    justify-content: center;
 }
 .footer-tabs ul li {
     float: left;
 }
-ul li .a-routes-footer {
+ul li .a-routes-footer,
+ul li .a-routes-footer:hover,
+ul li .a-routes-footer:active,
+ul li .a-routes-footer:visited {
     border: none;
     color: var(--color1);
-    padding: 0 1em;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2em;
 }
-
-/* ANCHOR media queries */
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-    h1 {
-        font-size: 3em;
-        padding: 20px 0 10px 0;
-        text-align: center;
-    }
-    /* Banner Principal - HOMEPAGE */
-    .banner .cols {
-        width: 100%;
-        align-self: center;
-        padding: 0;       
-        margin: 0 auto;
-    }
-    div.cols.img-home-page {
-        display: none;
-    }
-    .banner-home-page p {
-        font-size: 1.5em;
-        text-align: center;
-    }
-    .banner-home-page button {
-        display: flex;
-        margin: 10px auto;
-        font-size: 1em;
-    }
-    /* Section Conheça o time */
-    #meet-team h2 {
-        font-size: 3em;
-    }
-    #meet-team p {
-        font-size: 1.5em;
-    }
-    #meet-team button {
-        font-size: 1em;
-    }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    h1 {
-        font-size: 4em;
-        padding: 10px 0;
-    }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
+/*
+    ANCHOR 11 - Responsividade                      
+*/
