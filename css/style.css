@@ -664,4 +664,53 @@ ul li .a-routes-footer:visited {
         padding-left: 10px;
         padding-right: 10px;
     }
+    
+    #tag .btn {
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+    #tag a{
+        font-size: 1rem;
+    }
+    
+    #example h1{
+        font-size: 2em;
+    }
+    
+    #example h2, #definition h2, #attributes h2, #browser-support h2{
+        font-size: 1.75em;
+    }
+    
+    #example p {
+        font-size: 1.25em;
+    }
+    
+    #attributes table,
+    #browser-support table {
+        width: 100%;
+    }
+    
+    #attributes th, #browser-support th{
+        font-size: 1em;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #browser-support th img{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    
+    #browser-support td i {
+        font-size: 1rem;
+    }
+        
+    #attributes tbody td,
+    #browser-support tbody td {
+        padding: 5px 5px;
+        font-size: 1em;
+        text-align: center;
+    }
+    
 }
