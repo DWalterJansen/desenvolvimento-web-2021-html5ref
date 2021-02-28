@@ -633,4 +633,35 @@ ul li .a-routes-footer:visited {
         padding-right: 10px;
     }
     
+    #references h1 {
+        font-size: 2em;
+    }
+    
+    #tag h1 {
+        font-size: 2em;
+    }
+    
+    #team .row {
+        display: block;
+    }
+    
+    #team img {
+        width: 50%;
+        height: 50%;
+    }
+    
+    #team h1 {
+        font-size: 2em;
+    }
+    
+    #team h3 {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+    
+    #team p {
+        font-size: 1.5em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
