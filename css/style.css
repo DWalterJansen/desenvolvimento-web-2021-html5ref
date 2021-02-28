@@ -549,3 +549,88 @@ ul li .a-routes-footer:visited {
 /*
     ANCHOR 11 - Responsividade                      
 */
+@media screen and (max-width: 700px) {
+    .header-tabs {
+        font-size: 0.80em;
+    }
+    
+    .banner {
+        position: relative;
+        height: auto;
+    }
+    
+    .banner .row {
+        display: block;
+        width: 100%;
+    }
+    
+    .banner-home-page {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        display: block;
+        position: absolute;
+        top: 25%;
+        z-index: 1;
+    }
+    
+    .banner:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+    
+    .btn {
+        padding: 15px 30px;
+    }
+    
+    .banner-home-page .btn {
+        padding: 10px 20px;
+        margin-top: 50px;
+    }
+    
+    .banner-home-page h1 {
+        font-size: 2.5em;
+    }
+    
+    .banner-home-page p {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    
+    .banner-home-page a {
+        font-size: 1rem;
+    }
+    
+    .img-home-page {
+        opacity: 0.24;
+        width: 100%;
+        margin: auto;
+        padding: 50px 0;
+        z-index: 0;
+        
+    }    
+    
+    #tools .row {
+        display: block;
+    }
+    
+    #tools img {
+        width: 30%;
+        height: 30%;
+    }
+    
+    #tools p {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #meet-team p {
+        font-size: 1.5em;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+}
