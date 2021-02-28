@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt_br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &lt;li&gt;</title>
+    
+    <!-- Favicon-->
+    <link rel="icon" href="../icons/html-5.svg">
+
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+
+<body>
+   <!-- ANCHOR Header -->
+   <header>
+    <div class="container">
+        <div class="header-title">
+            <a href="../index.html">Guia <span>HTML 5</span></a>
+        </div>
+        <nav class="header-tabs">
+            <ul>
+                <li><a class="a-routes" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <menu>
+        <!-- ANCHOR Tag -->
+        <section id="tag">
+            <div class="container">
+                <h1>Tag &lt;li&gt;</h1>            
+                <!-- Button Navegation -->
+                <div class="row">
+                <div>
+                        <button class="btn-primary" id="btn-prev"><a href="">Anterior</a></button>
+                </div>
+                    <div>
+                        <button class="btn-primary" id="btn-next"><a href="../h1toh6.html">Próximo</a></button>
+                </div>
+                </div>
+        </section>
+
+        <!-- ANCHOR Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Uma lista HTML ordenada (&lt;ol&gt;) e uma não ordenada (&lt;ul&gt;):</p>
+            <div id="example-code">
+                <code>
+                    <p>&lt;ol&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Coffee&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Tea&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Milk&lt;/li&gt;<br>
+                        &lt;/ol&gt;<br><br>
+                        &lt;ul&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Coffee&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Tea&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Milk&lt;/li&gt;<br>
+                        &lt;/ul&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Definition -->
+        <section id="definition">
+            <h2>Definição e Uso</h2>
+            <p>A tag &lt;li&gt; define um item da lista.
+
+                A tag &lt;li&gt; é usada em listas ordenadas (&lt;ol&gt;), listas não ordenadas (&lt;ul&gt;) e em listas de menu (&lt;menu&gt;).<br>
+                
+                Em &lt;ul&gt; e &lt;menu&gt;, os itens da lista geralmente serão exibidos com marcadores.<br>
+                
+                Em &lt;ol&gt;, os itens da lista geralmente são exibidos com números ou letras.<br>
+                
+                <b>Dica:</b> Use CSS para estilizar listas. </p>
+        </section>
+
+        <!-- Attibutes -->
+        <section id="attributes">
+            <h2>Atributos</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="table-th-attribute">Atributo</th>
+                            <th id="table-th-value">Valor</th>
+                            <th id="table-th-description">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>value</td>
+                            <td>number</td>
+                            <td>Apenas para listas <ol>. Especifica o valor inicial de um item da lista. Os seguintes itens da lista serão incrementados a partir desse número </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Browser-support -->
+        <section id="browser-support">
+            <h2>Suporte de Navegador</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="support-tag">Tag</th>
+                            <th id="browser-img"><img src="../images/chrome.png" alt="Browser Chrome"></th>
+                            <th id="browser-img"><img src="../images/explorer.png" alt="Browser Explorer"></th>
+                            <th id="browser-img"><img src="../images/firefox.png" alt="Browser Firefox"></th>
+                            <th id="browser-img"><img src="../images/safari.png" alt="Browser Safari"></th>
+                            <th id="browser-img"><img src="../images/opera.png" alt="Browser Opera"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;li&gt;</td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Other Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Uso do atributo value em uma lista ordenada:</p>
+            <div id="example-code">
+                <code>
+                    <p>&lt;ol&gt;<br>
+                        &nbsp;
+                        &lt;li value=&quot;100&quot;&gt;Coffee&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Tea&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Milk&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Water&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Juice&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Beer&lt;/li&gt;<br>
+                        &lt;/ol&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Button Navegation -->
+        <section id="tag">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <button class="btn-primary" id="btn-prev"><a href="">Anterior</a></button>
+                    </div>
+                    <div>
+                        <button class="btn-primary" id="btn-next"><a href="../h1toh6.html">Próximo</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </menu>
+    <!-- ANCHOR Footer -->
+    <footer>
+        <hr>
+        <div class="footer-tabs">
+            <ul>
+                <li><a class="a-routes-footer" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes-footer" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </div>
+        <span class="footer-copy">Copyright&copy;2021</span>
+    </footer>
+</body>
+
+</html>

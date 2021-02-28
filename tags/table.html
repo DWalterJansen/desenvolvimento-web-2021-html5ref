@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt_br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &lt;table&gt;</title>
+    
+    <!-- Favicon-->
+    <link rel="icon" href="../icons/html-5.svg">
+
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+
+<body>
+   <!-- ANCHOR Header -->
+   <header>
+    <div class="container">
+        <div class="header-title">
+            <a href="../index.html">Guia <span>HTML 5</span></a>
+        </div>
+        <nav class="header-tabs">
+            <ul>
+                <li><a class="a-routes" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <menu>
+        <!-- ANCHOR Tag -->
+        <section id="tag">
+            <div class="container">
+                <h1>Tag &lt;table&gt;</h1>            
+                <!-- Button Navegation -->
+                <div class="row">
+                <div>
+                        <button class="btn-primary" id="btn-prev"><a href="../html.html">Anterior</a></button>
+                </div>
+                    <div>
+                        <button class="btn-primary" id="btn-next"><a href="../rt.html">Próximo</a></button>
+                </div>
+                </div>
+        </section>
+
+        <!-- ANCHOR Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Uma tabela HTML simples, contendo duas colunas e duas linhas:</p>
+            <div id="example-code">
+                <code>
+                    <p>&lt;table&gt;<br>
+                        &nbsp;
+                        &lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;
+                        &lt;th&gt;Month&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;
+                        &lt;th&gt;Savings&lt;/th&gt;<br>
+                        &nbsp;
+                        &lt;/tr&gt;<br>
+                        &nbsp;
+                        &lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;
+                        &lt;td&gt;January&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;
+                        &lt;td&gt;$100&lt;/td&gt;<br>
+                        &nbsp;
+                        &lt;/tr&gt;<br>
+                        &lt;/table&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Definition -->
+        <section id="definition">
+            <h2>Definição e Uso</h2>
+            <p>A tag &lt;table&gt; define uma tabela HTML.<br>
+
+                Uma tabela HTML consiste em um elemento &lt;table&gt; e um ou mais elementos &lt;tr&gt;, &lt;th&gt; e &lt;td&gt;.<br>
+                
+                O elemento &lt;tr&gt; define uma linha da tabela, o elemento &lt;th&gt; define um cabeçalho da tabela e o elemento &lt;td&gt; define uma célula da tabela.<br>
+                
+                Uma tabela HTML também pode incluir elementos &lt;caption&gt;, &lt;colgroup&gt;, &lt;thead&gt;, &lt;tfoot&gt; e &lt;tbody&gt;. </p>
+        </section>
+
+        <!-- Attibutes -->
+        <section id="attributes">
+            <h2>Atributos</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="table-th-attribute">Atributo</th>
+                            <th id="table-th-value">Valor</th>
+                            <th id="table-th-description">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Browser-support -->
+        <section id="browser-support">
+            <h2>Suporte de Navegador</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="support-tag">Tag</th>
+                            <th id="browser-img"><img src="../images/chrome.png" alt="Browser Chrome"></th>
+                            <th id="browser-img"><img src="../images/explorer.png" alt="Browser Explorer"></th>
+                            <th id="browser-img"><img src="../images/firefox.png" alt="Browser Firefox"></th>
+                            <th id="browser-img"><img src="../images/safari.png" alt="Browser Safari"></th>
+                            <th id="browser-img"><img src="../images/opera.png" alt="Browser Opera"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;table&gt;</td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Other Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Como adicionar bordas recolhidas a uma tabela (com CSS):</p>
+            <div id="example-code">
+                <code>
+                    <p>&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>table, th, td {<br>&nbsp; border: 1px solid 
+                        black;<br>&nbsp; border-collapse: collapse;<br>}<br>&lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;table&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; 
+                        &lt;th&gt;Month&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Savings&lt;/th&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; 
+                        &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;January&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; 
+                        &lt;td&gt;$100&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; 
+                        &lt;td&gt;February&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;$80&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>
+                        &lt;/table&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Button Navegation -->
+        <section id="tag">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <button class="btn-primary" id="btn-prev"><a href="../html.html">Anterior</a></button>
+                    </div>
+                    <div>
+                        <button class="btn-primary" id="btn-next"><a href="../rt.html">Próximo</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </menu>
+    <!-- ANCHOR Footer -->
+    <footer>
+        <hr>
+        <div class="footer-tabs">
+            <ul>
+                <li><a class="a-routes-footer" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes-footer" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </div>
+        <span class="footer-copy">Copyright&copy;2021</span>
+    </footer>
+</body>
+
+</html>
