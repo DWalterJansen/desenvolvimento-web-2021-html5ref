@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt_br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &lt;ol&gt;</title>
+    
+    <!-- Favicon-->
+    <link rel="icon" href="../icons/html-5.svg">
+
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+
+<body>
+   <!-- ANCHOR Header -->
+   <header>
+    <div class="container">
+        <div class="header-title">
+            <a href="../index.html">Guia <span>HTML 5</span></a>
+        </div>
+        <nav class="header-tabs">
+            <ul>
+                <li><a class="a-routes" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <menu>
+        <!-- ANCHOR Tag -->
+        <section id="tag">
+            <div class="container">
+                <h1>Tag &lt;ol&gt;</h1>            
+                <!-- Button Navegation -->
+                <div class="row">
+                    <div>
+                        <a class="btn btn-primary" id="btn-prev" href="noscript.html">Anterior</a>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" id="btn-next" href="picture.html">Próximo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANCHOR Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Duas listas ordenadas diferentes (a primeira lista começa em 1 e a segunda começa em 50):</p>
+            <div id="example-code">
+                <code>
+                    <p>&lt;ol&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Coffee&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Tea&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Milk&lt;/li&gt;<br>
+                        &lt;/ol&gt;<br>
+                        <br>
+                        &lt;ol start=&quot;50&quot;&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Coffee&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Tea&lt;/li&gt;<br>
+                        &nbsp;
+                        &lt;li&gt;Milk&lt;/li&gt;<br>
+                        &lt;/ol&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Definition -->
+        <section id="definition">
+            <h2>Definição e Uso</h2>
+            <p>A tag &lt;ol&gt; define uma lista ordenada. Uma lista ordenada pode ser numérica ou alfabética.<br>
+
+                A tag &lt;li&gt; é usada para definir cada item da lista.<br>
+                
+                <b>Dica:</b> Use CSS para estilizar listas.<br>
+                
+                <b>Dica:</b> Para lista não ordenada, use a tag &lt;ul&gt;.</p>
+        </section>
+
+        <!-- Attibutes -->
+        <section id="attributes">
+            <h2>Atributos</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="table-th-attribute">Atributo</th>
+                            <th id="table-th-value">Valor</th>
+                            <th id="table-th-description">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>reversed</td>
+                            <td>reversed</td>
+                            <td>Especifica que a ordem da lista deve ser invertida (9,8,7 ...)</td>
+                        </tr>
+                        <tr>
+                            <td>start</td>
+                            <td>number</td>
+                            <td>Especifica o valor inicial de uma lista ordenada</td>
+                        </tr>
+                        <tr>
+                            <td>type</td>
+                            <td>1<br>
+                                A<br>
+                                a<br>
+                                I<br>
+                                i</td>
+                            <td>Especifica o tipo de marcador a usar na lista</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Browser-support -->
+        <section id="browser-support">
+            <h2>Suporte de Navegador</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="support-tag">Tag</th>
+                            <th id="browser-img"><img src="../images/chrome.png" alt="Browser Chrome"></th>
+                            <th id="browser-img"><img src="../images/explorer.png" alt="Browser Explorer"></th>
+                            <th id="browser-img"><img src="../images/firefox.png" alt="Browser Firefox"></th>
+                            <th id="browser-img"><img src="../images/safari.png" alt="Browser Safari"></th>
+                            <th id="browser-img"><img src="../images/opera.png" alt="Browser Opera"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;ol&gt;</td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Other Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Defina diferentes tipos de lista (com CSS):</p>
+            <div id="example-code">
+                <code>
+                    <p>&lt;ol style=&quot;list-style-type:upper-roman&quot;&gt;<br>&lt;li&gt;Coffee&lt;/li&gt;<br>&lt;li&gt;Tea&lt;/li&gt;<br>
+                        &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;<br><br>&lt;ol style=&quot;list-style-type:lower-alpha&quot;&gt;<br>
+                        &lt;li&gt;Coffee&lt;/li&gt;<br>&lt;li&gt;Tea&lt;/li&gt;<br>&lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Button Navegation -->
+        <section id="tag">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <a class="btn btn-primary" id="btn-prev" href="noscript.html">Anterior</a>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" id="btn-next" href="picture.html">Próximo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </menu>
+    <!-- ANCHOR Footer -->
+    <footer>
+        <hr>
+        <div class="footer-tabs">
+            <ul>
+                <li><a class="a-routes-footer" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes-footer" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </div>
+        <span class="footer-copy">Copyright&copy;2021</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt_br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &lt;form&gt;</title>
+    
+    <!-- Favicon-->
+    <link rel="icon" href="../icons/html-5.svg">
+
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+
+<body>
+   <!-- ANCHOR Header -->
+   <header>
+    <div class="container">
+        <div class="header-title">
+            <a href="../index.html">Guia <span>HTML 5</span></a>
+        </div>
+        <nav class="header-tabs">
+            <ul>
+                <li><a class="a-routes" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <menu>
+        <!-- ANCHOR Tag -->
+        <section id="tag">
+            <div class="container">
+                <h1>Tag &lt;form&gt;</h1>            
+                <!-- Button Navegation -->
+                <div class="row">
+                    <div>
+                        <a class="btn btn-primary" id="btn-prev" href="b.html">Anterior</a>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" id="btn-next" href="noscript.html">Próximo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANCHOR Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Um formulário HTML com dois campos de entrada e um botão de envio:</p>
+            <div id="example-code">
+                <code>
+                    <p>&lt;form 
+                        action=&quot;/action_page.php&quot;
+                        method=&quot;get&quot;&gt;<br>
+                    &nbsp; &lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;<br>&nbsp; &lt;input type=&quot;text&quot; id=&quot;fname&quot; 
+                        name=&quot;fname&quot;&gt;&lt;br&gt;&lt;br&gt;<br>&nbsp; &lt;label for=&quot;lname&quot;&gt;Last name:&lt;/label&gt;<br>&nbsp; 
+                        &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot;&gt;&lt;br&gt;&lt;br&gt;<br>&nbsp; &lt;input 
+                        type=&quot;submit&quot; value=&quot;Submit&quot;&gt;<br>
+                        &lt;/form&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Definition -->
+        <section id="definition">
+            <h2>Definição e Uso</h2>
+            <p>A tag <span>&lt;form&gt;</span> é usada para criar um formulário HTML para entrada do usuário.<br>
+                O elemento <span>&lt;form&gt;</span> pode conter um ou mais dos seguintes elementos de formulário:<br>
+                <span>&lt;input&gt;</span><br>
+                <span>&lt;textarea&gt;</span><br>
+                <span>&lt;button&gt;</span><br>
+                <span>&lt;select&gt;</span><br>
+                <span>&lt;option&gt;</span><br>
+                <span>&lt;optgroup&gt;</span><br>
+                <span>&lt;fieldset&gt;</span><br>
+                <span>&lt;label&gt;</span><br>
+                <span>&lt;output&gt;</span></p>
+        </section>
+
+        <!-- Attibutes -->
+        <section id="attributes">
+            <h2>Atributos</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="table-th-attribute">Atributo</th>
+                            <th id="table-th-value">Valor</th>
+                            <th id="table-th-description">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>accept-charset</td>
+                            <td>character_set</td>
+                            <td>Especifica as codificações de caracteres que devem ser usadas para o envio do formulário</td>
+                        </tr>
+                        <tr>
+                            <td>action</td>
+                            <td>URL</td>
+                            <td>Especifica para onde enviar os dados do formulário quando um formulário é enviado</td>
+                        </tr>
+                        <tr>
+                            <td>autocomplete</td>
+                            <td>on<br>
+                                off</td>
+                            <td>Especifica se um formulário deve ter o preenchimento automático ativado ou desativado</td>
+                        </tr>
+                        <tr>
+                            <td>enctype</td>
+                            <td>application/x-www-form-urlencoded<br>
+                                multipart/form-data<br>
+                                text/plain</td>
+                            <td>Especifica como os dados do formulário devem ser codificados ao enviá-los para o servidor (apenas para method = "post")</td>
+                        </tr>
+                        <tr>
+                            <td>method</td>
+                            <td>get<br>
+                                post</td>
+                            <td>Especifica o método HTTP a ser usado ao enviar dados do formulário</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>text</td>
+                            <td>Especifica o nome de um formulário</td>
+                        </tr>
+                        <tr>
+                            <td>novalidate</td>
+                            <td>novalidate</td>
+                            <td>Especifica que o formulário não deve ser validado quando enviado</td>
+                        </tr>
+                        <tr>
+                            <td>rel</td>
+                            <td>external<br>
+                                help<br>
+                                license<br>
+                                next<br>
+                                nofollow<br>
+                                noopener<br>
+                                noreferrer<br>
+                                opener<br>
+                                prev<br>
+                                search</td>
+                            <td>Especifica a relação entre um recurso ligado e o documento atual</td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>_blank<br>
+                                _self<br>
+                                _parent<br>
+                                _top</td>
+                            <td>Especifica onde exibir a resposta recebida após o envio do formulário</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Browser-support -->
+        <section id="browser-support">
+            <h2>Suporte de Navegador</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="support-tag">Tag</th>
+                            <th id="browser-img"><img src="../images/chrome.png" alt="Browser Chrome"></th>
+                            <th id="browser-img"><img src="../images/explorer.png" alt="Browser Explorer"></th>
+                            <th id="browser-img"><img src="../images/firefox.png" alt="Browser Firefox"></th>
+                            <th id="browser-img"><img src="../images/safari.png" alt="Browser Safari"></th>
+                            <th id="browser-img"><img src="../images/opera.png" alt="Browser Opera"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;form&gt;</td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Other Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Um formulário HTML com caixas de seleção</p>
+            <div id="example-code">
+                <code>
+                    <p>    &lt;form action=&quot;/action_page.php&quot; method=&quot;get&quot;&gt;<br>&nbsp; &lt;input 
+                        type=&quot;checkbox&quot; name=&quot;vehicle1&quot; value=&quot;Bike&quot;&gt;<br>&nbsp; &lt;label 
+                        for=&quot;vehicle1&quot;&gt; I have a bike&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;checkbox&quot; 
+                        name=&quot;vehicle2&quot; value=&quot;Car&quot;&gt;<br>&nbsp; &lt;label for=&quot;vehicle2&quot;&gt; I have a 
+                        car&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;checkbox&quot; name=&quot;vehicle3&quot; 
+                        value=&quot;Boat&quot; checked&gt;<br>&nbsp; &lt;label for=&quot;vehicle3&quot;&gt; I have a 
+                        boat&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;<br>
+                        &lt;/form&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Button Navegation -->
+        <section id="tag">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <a class="btn btn-primary" id="btn-prev" href="b.html">Anterior</a>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" id="btn-next" href="noscript.html">Próximo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </menu>
+    <!-- ANCHOR Footer -->
+    <footer>
+        <hr>
+        <div class="footer-tabs">
+            <ul>
+                <li><a class="a-routes-footer" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes-footer" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </div>
+        <span class="footer-copy">Copyright&copy;2021</span>
+    </footer>
+</body>
+
+</html>

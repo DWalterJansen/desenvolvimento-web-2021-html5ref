@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt_br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &lt;iframe&gt;</title>
+    
+    <!-- Favicon-->
+    <link rel="icon" href="../icons/html-5.svg">
+
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+
+<body>
+   <!-- ANCHOR Header -->
+   <header>
+    <div class="container">
+        <div class="header-title">
+            <a href="../index.html">Guia <span>HTML 5</span></a>
+        </div>
+        <nav class="header-tabs">
+            <ul>
+                <li><a class="a-routes" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <menu>
+        <!-- ANCHOR Tag -->
+        <section id="tag">
+            <div class="container">
+                <h1>Tag &lt;iframe&gt;</h1>            
+                <!-- Button Navegation -->
+                <div class="row">
+                    <div>
+                        <a class="btn btn-primary" id="btn-prev" href="picture.html">Anterior</a>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" id="btn-next" href="optgroup.html">Próximo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANCHOR Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Um quadro embutido é marcado da seguinte maneira:</p>
+            <div id="example-code">
+                <code>
+                    <p>&lt;iframe src=&quot;https://www.w3schools.com&quot; title=&quot;W3Schools Free 
+                        Online Web Tutorials&quot;&gt;&lt;/iframe&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Definition -->
+        <section id="definition">
+            <h2>Definição e Uso</h2>
+            <p>A tag &lt;iframe&gt; especifica um quadro embutido.<br>
+
+                Um quadro embutido é usado para incorporar outro documento ao documento HTML atual.<br>
+                
+                <b>Dica:</b> Use CSS para estilizar o &lt;iframe&gt; (veja o exemplo abaixo).<br>
+                
+                <b>Dica:</b> É uma boa prática sempre incluir um atributo de título para o &lt;iframe&gt;. Isso é usado por leitores de tela para ler qual é o conteúdo do &lt;iframe&gt;. </p>
+        </section>
+
+        <!-- Attibutes -->
+        <section id="attributes">
+            <h2>Atributos</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="table-th-attribute">Atributo</th>
+                            <th id="table-th-value">Valor</th>
+                            <th id="table-th-description">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>allow</td>
+                            <td>-</td>
+                            <td>Especifica uma política de recursos para o &lt;iframe&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>allowfullscreen</td>
+                            <td>true<br>
+                                false</td>
+                            <td>Defina como true se &lt;iframe&gt; puder ativar o modo de tela inteira chamando o método</td>
+                        </tr>
+                        <tr>
+                            <td>allowpaymentrequest</td>
+                            <td>true<br>
+                                false</td>
+                            <td>Definido como verdadeiro se um &lt;iframe&gt; de origem cruzada tiver permissão para invocar a API de solicitação de pagamento</td>
+                        </tr>
+                        <tr>
+                            <td>height</td>
+                            <td>pixels</td>
+                            <td>Especifica a altura de um &lt;iframe&gt;. A altura padrão é 150 pixels</td>
+                        </tr>
+                        <tr>
+                            <td>loading</td>
+                            <td>eager<br>
+                                lazy</td>
+                            <td>Especifica se um navegador deve carregar um iframe imediatamente ou adiar o carregamento de iframes até que algumas condições sejam atendidas</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>text</td>
+                            <td>Especifica o nome de um &lt;iframe&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>referrerpolicy</td>
+                            <td>no-referrer<br>
+                                no-referrer-when-downgrade<br>
+                                origin<br>
+                                origin-when-cross-origin<br>
+                                same-origin<br>
+                                strict-origin-when-cross-origin<br>
+                                unsafe-url</td>
+                            <td>Especifica quais informações de referência enviar ao buscar o iframe</td>
+                        </tr>
+                        <tr>
+                            <td>sandbox</td>
+                            <td>allow-forms<br>
+                                allow-pointer-lock<br>
+                                allow-popups<br>
+                                allow-same-origin<br>
+                                allow-scripts<br>
+                                allow-top-navigation</td>
+                            <td>Habilita um conjunto extra de restrições para o conteúdo em um &lt;iframe&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>src</td>
+                            <td>URL</td>
+                            <td>Especifica o endereço do documento a ser incorporado no &lt;iframe&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>srcdoc</td>
+                            <td>HTML_code</td>
+                            <td>Especifica o conteúdo HTML da página a ser exibida no &lt;iframe&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>width</td>
+                            <td>pixels</td>
+                            <td>Especifica a largura de um &lt;iframe&gt;. A largura padrão é 300 pixels </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Browser-support -->
+        <section id="browser-support">
+            <h2>Suporte de Navegador</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="support-tag">Tag</th>
+                            <th id="browser-img"><img src="../images/chrome.png" alt="Browser Chrome"></th>
+                            <th id="browser-img"><img src="../images/explorer.png" alt="Browser Explorer"></th>
+                            <th id="browser-img"><img src="../images/firefox.png" alt="Browser Firefox"></th>
+                            <th id="browser-img"><img src="../images/safari.png" alt="Browser Safari"></th>
+                            <th id="browser-img"><img src="../images/opera.png" alt="Browser Opera"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;iframe&gt;</td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Other Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Adicionar e remover bordas de iframe (com CSS):</p>
+            <div id="example-code">
+                <code>
+                    <p>&lt;iframe src=&quot;/default.asp&quot; width=&quot;100%&quot; height=&quot;300&quot; style=&quot;border:1px solid 
+                        black;&quot;&gt;<br>&lt;/iframe&gt;<br><br>&lt;iframe src=&quot;/default.asp&quot; width=&quot;100%&quot; 
+                        height=&quot;300&quot; style=&quot;border:none;&quot;&gt;<br>&lt;/iframe&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Button Navegation -->
+        <section id="tag">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <a class="btn btn-primary" id="btn-prev" href="picture.html">Anterior</a>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" id="btn-next" href="optgroup.html">Próximo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </menu>
+    <!-- ANCHOR Footer -->
+    <footer>
+        <hr>
+        <div class="footer-tabs">
+            <ul>
+                <li><a class="a-routes-footer" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes-footer" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </div>
+        <span class="footer-copy">Copyright&copy;2021</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt_br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag &lt;img&gt;</title>
+    
+    <!-- Favicon-->
+    <link rel="icon" href="../icons/html-5.svg">
+
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+
+<body>
+   <!-- ANCHOR Header -->
+   <header>
+    <div class="container">
+        <div class="header-title">
+            <a href="../index.html">Guia <span>HTML 5</span></a>
+        </div>
+        <nav class="header-tabs">
+            <ul>
+                <li><a class="a-routes" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <menu>
+        <!-- ANCHOR Tag -->
+        <section id="tag">
+            <div class="container">
+                <h1>Tag &lt;img&gt;</h1>            
+                <!-- Button Navegation -->
+                <div class="row">
+                    <div>
+                        <a class="btn btn-primary" id="btn-prev" href="optgroup.html">Anterior</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANCHOR Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Como inserir uma imagem:</p>
+            <div id="example-code">
+                <code>
+                    <p> &lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl in a jacket&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Definition -->
+        <section id="definition">
+            <h2>Definição e Uso</h2>
+            <p>A tag <img> é usada para incorporar uma imagem em uma página HTML.<br>
+
+                As imagens não são tecnicamente inseridas em uma página da web; as imagens são vinculadas a páginas da web. A tag <img> cria um espaço de retenção para a imagem referenciada.<br>
+                
+                A tag <img> tem dois atributos obrigatórios:<br>
+                
+                src - especifica o caminho para a imagem<br>
+                alt - especifica um texto alternativo para a imagem, se a imagem por algum motivo não puder ser exibida<br>
+                <b>Nota:</b> Além disso, sempre especifique a largura e a altura de uma imagem. Se largura e altura não forem especificadas, a página pode piscar enquanto a imagem carrega.<br>
+                
+                <b>Dica:</b> para vincular uma imagem a outro documento, simplesmente aninhe a tag &lt;img&gt; dentro de uma tag &lt;a&gt; (veja o exemplo abaixo). </p>
+        </section>
+
+        <!-- Attibutes -->
+        <section id="attributes">
+            <h2>Atributos</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="table-th-attribute">Atributo</th>
+                            <th id="table-th-value">Valor</th>
+                            <th id="table-th-description">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>alt</td>
+                            <td>text</td>
+                            <td>Especifica um texto alternativo para uma imagem</td>
+                        </tr>
+                        <tr>
+                            <td>crossorigin</td>
+                            <td>anonymous<br>
+                                use-credentials</td>
+                            <td>Permitir que imagens de sites de terceiros que permitem acesso de origem cruzada sejam usadas com o canvas</td>
+                        </tr>
+                        <tr>
+                            <td>height</td>
+                            <td>pixels</td>
+                            <td>Especifica a altura de uma imagem</td>
+                        </tr>
+                        <tr>
+                            <td>ismap</td>
+                            <td>ismap</td>
+                            <td>Especifica uma imagem como um mapa de imagem do lado do servidor</td>
+                        </tr>
+                        <tr>
+                            <td>loading</td>
+                            <td>eager<br>
+                                lazy</td>
+                            <td>Especifica se um navegador deve carregar uma imagem imediatamente ou adiar o carregamento de imagens até que algumas condições sejam atendidas</td>
+                        </tr>
+                        <tr>
+                            <td>longdesc</td>
+                            <td>URL</td>
+                            <td>Especifica um URL para uma descrição detalhada de uma imagem</td>
+                        </tr>
+                        <tr>
+                            <td>referrerpolicy</td>
+                            <td>no-referrer<br>
+                                no-referrer-when-downgrade<br>
+                                origin<br>
+                                origin-when-cross-origin<br>
+                                unsafe-url</td>
+                            <td>Especifica quais informações de referência usar ao buscar uma imagem</td>
+                        </tr>
+                        <tr>
+                            <td>sizes</td>
+                            <td>sizes</td>
+                            <td>Especifica tamanhos de imagem para diferentes layouts de página</td>
+                        </tr>
+                        <tr>
+                            <td>src</td>
+                            <td>URL</td>
+                            <td>Especifica o caminho para a imagem</td>
+                        </tr>
+                        <tr>
+                            <td>srcset</td>
+                            <td>URL-list</td>
+                            <td>Especifica uma lista de arquivos de imagem para usar em diferentes situações</td>
+                        </tr>
+                        <tr>
+                            <td>usemap</td>
+                            <td>#mapname/td>
+                            <td>Especifica uma imagem como um mapa de imagem do lado do cliente</td>
+                        </tr>
+                        <tr>
+                            <td>width</td>
+                            <td>pixels</td>
+                            <td>Especifica a largura de uma imagem</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Browser-support -->
+        <section id="browser-support">
+            <h2>Suporte de Navegador</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="support-tag">Tag</th>
+                            <th id="browser-img"><img src="../images/chrome.png" alt="Browser Chrome"></th>
+                            <th id="browser-img"><img src="../images/explorer.png" alt="Browser Explorer"></th>
+                            <th id="browser-img"><img src="../images/firefox.png" alt="Browser Firefox"></th>
+                            <th id="browser-img"><img src="../images/safari.png" alt="Browser Safari"></th>
+                            <th id="browser-img"><img src="../images/opera.png" alt="Browser Opera"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;img&gt;</td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                            <td id="support-browser"><i class="fas fa-check-circle fa-2x support"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Other Example -->
+        <section id="example">
+            <h2>Exemplo</h2>
+            <p>Alinhar imagem (com CSS):</p>
+            <div id="example-code">
+                <code>
+                    <p>&lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot; width=&quot;42&quot; height=&quot;42&quot; style=&quot;vertical-align:bottom&quot;&gt;<br>
+                        &lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot; width=&quot;42&quot; height=&quot;42&quot; style=&quot;vertical-align:middle&quot;&gt;<br>
+                        &lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot; width=&quot;42&quot; height=&quot;42&quot; style=&quot;vertical-align:top&quot;&gt;<br>
+                        &lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot; width=&quot;42&quot; height=&quot;42&quot; style=&quot;float:right&quot;&gt;<br>
+                        &lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot; width=&quot;42&quot; height=&quot;42&quot; style=&quot;float:left&quot;&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <!-- Button Navegation -->
+        <section id="tag">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <a class="btn btn-primary" id="btn-prev" href="optgroup.html">Anterior</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </menu>
+    <!-- ANCHOR Footer -->
+    <footer>
+        <hr>
+        <div class="footer-tabs">
+            <ul>
+                <li><a class="a-routes-footer" href="../index.html">Homepage</a></li>
+                <li><a class="a-routes-footer" href="../sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </div>
+        <span class="footer-copy">Copyright&copy;2021</span>
+    </footer>
+</body>
+
+</html>
